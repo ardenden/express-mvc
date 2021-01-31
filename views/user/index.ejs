@@ -1,0 +1,25 @@
+<div class="d-flex pt-3 mb-3">
+  <a href="/users/create" class="btn btn-primary"><i class="bi-plus me-2"></i>Create User</a>
+  <div class="ms-auto"></div>
+</div>
+
+<div class="table-responsive">
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Created At</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% users.forEach(function(user) { %>
+        <tr>
+          <td><%= user.name %></td>
+          <td><%= user.email %></td>
+          <td><%= user.createdAt %></td>
+        </tr>
+      <% }); %>
+    </tbody>
+  </table>
+</div>

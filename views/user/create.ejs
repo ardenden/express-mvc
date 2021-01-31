@@ -1,0 +1,19 @@
+<div class="pt-3">
+  <a href="/users" class="btn btn-primary mb-3"><i class="bi-arrow-left me-2"></i>Back to Users</a>
+  <%- include('../partials/messages') %>
+  <form action="/users/create" method="POST">
+    <div class="mb-3">
+      <label for="name" class="form-label">Name</label>
+      <input type="name" class="form-control" id="name" name="name" value="<%= typeof name != 'undefined' ? name : '' %>">
+    </div>
+    <div class="mb-3">
+      <label for="email" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="email" name="email" value="<%= typeof email != 'undefined' ? email : '' %>">
+    </div>
+    <div class="mb-3">
+      <label for="password" class="form-label">Password</label>
+      <input type="password" class="form-control" id="password" name="password" value="<%= typeof password != 'undefined' ? password : '' %>">
+    </div>
+    <button type="submit" class="btn btn-success"><i class="bi-save me-2"></i>Create User</button>
+  </form>
+</div>
