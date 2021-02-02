@@ -19,6 +19,11 @@ router.get('/home', ensureAuthenticated, home.index);
 // users
 router.get('/users', ensureAuthenticated, user.index);
 router.get('/users/create', ensureAuthenticated, user.create);
-router.post('/users/create', ensureAuthenticated, user.store);
+router.post(
+	'/users/create',
+	ensureAuthenticated,
+	user.storeValidate,
+	user.store
+);
 
 module.exports = router;

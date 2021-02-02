@@ -1,1 +1,1 @@
-npm i express bcryptjs passport passport-local ejs express-ejs-layouts sequelize pg pg-hstore connect-flash express-session
+npm i express bcryptjs passport passport-local ejs express-ejs-layouts sequelize pg pg-hstore connect-flash express-session express-validator
